@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/icon.png" />
+        <title>FitDPattern</title>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    </head>
+	<body class="flx flx-col">
+		<header class="full-w flx flx-row" id="mastheadContainer">
+			<h1 id="masthead">Fit-D-Pattern</h1>
+		</header>
+		
+		<main id="mainContainer" class="flx flx-col">
+			<section id="toggleCompleteWrapper">
+				<label id="toggleLbl" class="ptr flx flx-row">
+					<input type="checkbox" id="chkToggle" checked="checked">
+					<span id="toggleTxt">Show Complete</span>
+					<span class="checkmark"></span>
+				</label>
+			</section>
+			<section id="resetWrapper" class="ptr">
+				<span class="resetTxt">Reset</span>
+				<span class="glyphicon glyphicon-repeat"></span>
+			</section>
+			<section id="levelWrapper">
+				<p>
+					<span>Level : </span>
+					<span id="levelCount" class="num">1</span>
+				</p>
+			</section>
+			<section id="gridsWrapper" class="full-w flx">
+				<div id="gridWorking" class="grid-section flx flx-col">
+					<div id="working" style="opacity: 1.0;">
+						<div id="row1" class="row flx flx-row">
+							<div id="row1col1" class="col"></div>
+							<div id="row1col2" class="col"></div>
+							<div id="row1col3" class="col"></div>
+						</div>
+						<div id="row2" class="row flx flx-row">
+							<div id="row2col1" class="col"></div>
+							<div id="row2col2" class="col"></div>
+							<div id="row2col3" class="col"></div>
+						</div>
+						<div id="row3" class="row flx flx-row">
+							<div id="row3col1" class="col"></div>
+							<div id="row3col2" class="col"></div>
+							<div id="row3col3" class="col"></div>
+						</div>
+					</div>
+					<div id="workingDetails">
+						<div id="movesWrapper">
+							<span>Moves Left:</span>
+							<span id="movesCount" class="num"></span>
+						</div>
+					</div>
+				</div>
+				<div id="gridComplete" class="grid-section flx flx-col">
+					<div id="complete" class="">
+						<div id="c_row1" class="row flx flx-row">
+							<div id="c_row1col1" class="col"></div>
+							<div id="c_row1col2" class="col"></div>
+							<div id="c_row1col3" class="col"></div>
+						</div>
+						<div id="c_row2" class="row flx flx-row">
+							<div id="c_row2col1" class="col"></div>
+							<div id="c_row2col2" class="col"></div>
+							<div id="c_row2col3" class="col"></div>
+						</div>
+						<div id="c_row3" class="row flx flx-row">
+							<div id="c_row3col1" class="col"></div>
+							<div id="c_row3col2" class="col"></div>
+							<div id="c_row3col3" class="col"></div>
+						</div>
+					</div>
+					<span id="chkComplete"></span>
+				</div>
+			</section>
+			
+			<div id="loading" class="flx-col">
+				<span id="newLevel"></span>
+				<span id="accolade"></span>
+				<span id="thumb"></span>
+				<span class="loading_text">Loading...</span>
+			</div>
+			
+			<div id="exceeded" class="flx-col">
+				<span class="exceeded-msg">Number of Moves exceeded.</span>
+				<span class="retry">Tap To Retry.</span>
+			</div>
+			
+		</main>
+		
+		<footer>
+            <p>Bello Damilola | 17-06-2018</p>
+        </footer>
+
+        <!-- JS Scripts -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/main.js"></script>
+	</body>
+</html>
